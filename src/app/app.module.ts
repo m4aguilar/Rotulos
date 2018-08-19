@@ -13,6 +13,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactoComponent } from './components/contacto/contacto.component';
 //Mapas
 import { AgmCoreModule } from '@agm/core';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AgmCoreModule } from '@agm/core';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    ContactoComponent
+    ContactoComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
