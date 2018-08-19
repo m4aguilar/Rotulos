@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule,  NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,7 +11,8 @@ import { HeaderComponent } from './components/header/header.component';
 //Material
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactoComponent } from './components/contacto/contacto.component';
-
+//Mapas
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,10 @@ import { ContactoComponent } from './components/contacto/contacto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA_8SrQTw3jkiF2Ot4vb2hWuc5kjcjTMug'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],

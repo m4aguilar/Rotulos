@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
+  private longitud:string = '-4.8781545';
+  private latitud:string = '37.3010892';
+  
   constructor() { }
 
   ngOnInit() {

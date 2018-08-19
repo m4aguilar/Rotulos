@@ -1,3 +1,19 @@
-<p>
-  contacto works!
-</p>
+<div class="container content">
+    <div class="col-md-12" id="text">
+
+      <h4>Mapa del sitio</h4>
+      <div id="map"></div>
+      <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      <br>
+      <div class="col-md-12" id=textContact>
+          <p class="text-center">Rótulos Rolux</p>
+          <p class="text-center">P.I. Sierra Sur, C/Anisados, 6 A</p>
+          <p class="text-center">Telf: 606 758 721</p>
+          <p class="text-center">Fax: 955 912 795</p>
+          <p class="text-center">Estepa(Sevilla)</p>
+          <p class="text-center">Email: rotulosrolux@telefonica.net / info@rotulosrolux.es</p>
+      </div>
+    </div>
+  </div>
