@@ -1,0 +1,19 @@
+/*Linea*/
+hr{
+    border-color: black;
+  }
+/*Iconos RRSS*/
+.imgRRSS{
+    display:inline-block;
+    margin-right:10px;
+    max-width: 40px;
+    max-height: 40px;
+}
+.imgRRSS:hover{
+    transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+}
+.fpadding{
+padding-top: 5px;
+}
