@@ -1,0 +1,33 @@
+<div class="container">
+  <h2>Formulario para contactar</h2>
+  <div class="col-md-6">
+    <form novalidate [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre *</label>
+        <input type="text" class="form-control" id="name" formControlName="nombre" placeholder="Introduce tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" class="form-control" formControlName="telefono" id="telefono" placeholder="Introduce tu teléfono">
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" class="form-control" id="email" formControlName="email" placeholder="Introduce tu email">
+      </div>
+      <div class="form-group">
+        <label for="asunto">Asunto</label>
+        <input type="text" class="form-control" id="asunto" formControlName="asunto" placeholder="Introduce el asunto">
+      </div>
+      <div class="form-group">
+        <label for="consulta">Escribe tu consulta *</label>
+        <textarea class="form-control" id="consulta" rows="3" formControlName="consulta" placeholder="Describe tu consulta"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default" [disabled]="form.invalid">Enviar</button>
+
+      <div class="" style="padding-top: 10px;">
+        <p><strong>* </strong> Todos estos campos son requeridos.</p>
+      </div>
+    </form>
+  </div>
+</div>
+ 

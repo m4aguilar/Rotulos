@@ -14,6 +14,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 //Mapas
 import { AgmCoreModule } from '@agm/core';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,15 +25,18 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
     FooterComponent,
     HeaderComponent,
     ContactoComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    PresupuestoComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA_8SrQTw3jkiF2Ot4vb2hWuc5kjcjTMug'
-    })
+    }),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
