@@ -17,7 +17,7 @@ export class PresupuestoComponent implements OnInit {
     this.form = this.fb.group({
       nombre: new FormControl('', [Validators.required, Validators.minLength(3)]),
       telefono: new FormControl(''),
-      email: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.email]),
       asunto: new FormControl(''),
       consulta: new FormControl('', [Validators.required, Validators.minLength(5)])
 
