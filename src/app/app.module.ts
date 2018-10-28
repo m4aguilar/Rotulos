@@ -12,6 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactoComponent } from './components/contacto/contacto.component';
 
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    Angular2ImageGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent],
