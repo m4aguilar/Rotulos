@@ -1,0 +1,55 @@
+{
+    "folders": [
+        {
+            "name-folder" : "impresion-digital",
+            "number-elements": 9,
+            "list-images": [ 
+                {
+                    "id": 1,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 2,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 3,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 4,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 5,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 6,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 7,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 8,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                },
+                {
+                    "id": 9,
+                    "name": "1.jgp",
+                    "alt": "parque"
+                }
+            ]
+        }
+    ]
+}

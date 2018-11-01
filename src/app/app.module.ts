@@ -16,6 +16,7 @@ import { AgmCoreModule } from '@agm/core';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     ContactoComponent,
     NosotrosComponent,
-    PresupuestoComponent
+    PresupuestoComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

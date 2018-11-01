@@ -1,0 +1,21 @@
+<div class="container gallery-container">
+
+  <h1>Ejemplo de Galería</h1>
+
+  <p class="page-description text-center">Pulsa para ampliar la imagen</p>
+
+  <div class="tz-gallery">
+      <div class="row">
+          <div class="col-sm-6 col-md-4" *ngFor="let image of images; let i = index">
+              <a class="lightbox" href="assets/images/{{i}}.jpg">
+                  <img src="assets/images/{{i}}.jpg" alt="Park">
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
