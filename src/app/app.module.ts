@@ -12,10 +12,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactoComponent } from './components/contacto/contacto.component';
 //Mapas
-import { AgmCoreModule } from '@agm/core';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
+
 
 @NgModule({
   declarations: [
@@ -33,10 +35,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyA_8SrQTw3jkiF2Ot4vb2hWuc5kjcjTMug'
-    }),
-    ReactiveFormsModule
+    Angular2ImageGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent],
