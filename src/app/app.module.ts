@@ -16,7 +16,8 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+import { GalleryComponent } from './components/gallery/gallery.component'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
     HeaderComponent,
     ContactoComponent,
     NosotrosComponent,
-    PresupuestoComponent
+    PresupuestoComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
