@@ -12,7 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactoComponent } from './components/contacto/contacto.component';
 
-import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+import { GalleryComponent } from './components/gallery/gallery.component'
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    ContactoComponent
+    ContactoComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
