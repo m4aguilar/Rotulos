@@ -37,7 +37,8 @@ import { GalleryComponent } from './components/gallery/gallery.component'
     FormsModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    Angular2ImageGalleryModule
+    Angular2ImageGalleryModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
