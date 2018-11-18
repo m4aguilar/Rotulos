@@ -18,11 +18,19 @@ export class PresupuestoComponent implements OnInit {
       nombre: new FormControl('', [Validators.required, Validators.minLength(3)]),
       telefono: new FormControl(''),
       email: new FormControl('', [Validators.email]),
+      emailRepeat: new FormControl('', [Validators.email]),
       asunto: new FormControl(''),
       consulta: new FormControl('', [Validators.required, Validators.minLength(5)])
 
-    });
+    }, {validator: this.checkEmails });
     console.log(this.form);
+  }
+
+  checkEmails(group: FormGroup){
+    let email = group.controls.email.value;
+    let confirmEmail = group.controls.emailRepeat.value;
+
+    return email === confirmEmail ? null : { notSame: true }    
   }
 
   onSubmit(){
