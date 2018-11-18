@@ -18,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { GalleryComponent } from './components/gallery/gallery.component';
-import { ServiciosComponent } from './components/servicios/servicios.component'
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { CatalogueComponent } from './components/catalogue/catalogue.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component'
     NosotrosComponent,
     PresupuestoComponent,
     GalleryComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    CatalogueComponent
   ],
   imports: [
     BrowserModule,
