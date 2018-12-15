@@ -20,6 +20,7 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CatalogueComponent } from './components/catalogue/catalogue.component';
     PresupuestoComponent,
     GalleryComponent,
     ServiciosComponent,
-    CatalogueComponent
+    CatalogueComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

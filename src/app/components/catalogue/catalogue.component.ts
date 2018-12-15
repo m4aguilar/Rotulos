@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonService } from 'src/app/services/json-service.service';
 
 @Component({
   selector: 'app-catalogue',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogueComponent implements OnInit {
 
-  constructor() { }
+  public logo: string;
+  public title: string;
+  public description: string;
+  public url: string;
+  public fileJson: string = "assets/json/catalogues.json";
+  public proveedores: Array<string>;
+  
+
+  constructor(private jsonService: JsonService) { }
 
   ngOnInit() {
+    this.loadFile();
+  }
+
+  loadFile(){
+    this.jsonService.getData(this.fileJson).subscribe(data =>{
+      this.proveedores = data;
+    });
   }
 
 }

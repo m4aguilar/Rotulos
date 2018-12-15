@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-servicios',
@@ -20,9 +20,12 @@ export class ServiciosComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loadFile();
+  }
+
+  loadFile(){
     this.nameService = this.ruteActive.snapshot.params.service;
     this.fileJson = 'assets/json/' + this.ruteActive.snapshot.params.service + '.json';
-    console.log(this.fileJson);
     //Mientras tanto ponemos el json de ejemplo
     //this.fileJson = "assets/img/images.json";
   }
