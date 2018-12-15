@@ -1,0 +1,13 @@
+<div class="container content">
+  <div>
+    <h2 class="title">Catálogos de nuestros proveedores</h2>
+    <div class="card-columns">
+      <app-card *ngFor="let item of proveedores"
+        [logo]="item.logo"
+        [title]="item.title"
+        [description]="item.description"
+        [url]="item.url">
+      </app-card>
+    </div>
+  </div>
+</div>
