@@ -21,6 +21,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { CardComponent } from './components/card/card.component';
+import { FootersimpleComponent } from './components/footersimple/footersimple.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CardComponent } from './components/card/card.component';
     GalleryComponent,
     ServiciosComponent,
     CatalogueComponent,
-    CardComponent
+    CardComponent,
+    FootersimpleComponent
   ],
   imports: [
     BrowserModule,
