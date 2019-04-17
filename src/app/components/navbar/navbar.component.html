@@ -27,14 +27,13 @@
 
   </ul>
 </nav> -->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo" class="prueba">
+<!-- <mdb-navbar SideClass="navbar navbar-expand-sm navbar-dark">
   <links>
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link waves-light" mdbWavesEffect routerLink="/inicio">Inicio
             <span class="sr-only">(current)</span></a>
         </li>
-        <!-- Dropdown -->
         <li class="nav-item dropdown" dropdown>
           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Servicios<span class="caret"></span></a>
@@ -59,4 +58,44 @@
         </li>
       </ul>
   </links>
-</mdb-navbar>
+</mdb-navbar> -->
+
+<nav class="navbar navbar-expand-sm navbar-dark info-color">
+  <a class="navbar-brand" routerLink="/inicio">Rolux</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-effect waves-light" routerLink="/inicio">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+              <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item waves-effect waves-light" routerLink="/impresion-digital">Impresión digital</a>
+                <a class="dropdown-item waves-effect waves-light" routerLink="/rotulos-establecimientos">Rótulos de establecimientos</a>
+                <a class="dropdown-item waves-effect waves-light" routerLink="/rotulos-vehiculos">Rótulos en vehículos</a>
+                <a class="dropdown-item waves-effect waves-light" routerLink="/decoracion">Decoración</a>
+                <a class="dropdown-item waves-effect waves-light" routerLink="/vallas-publicitarias">Vallas publicitarias</a>
+                <a class="dropdown-item waves-effect waves-light" routerLink="/ferias-y-exposiciones">Ferias y exposiciones</a>
+                <a class="dropdown-item waves-effect waves-light" routerLink="/articulos-publicitarios">Artículos publicitarios</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" routerLink="/nosotros">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" routerLink="/presupuesto">Presupuesto</a>
+          </li>
+          <li class="nav-item liContacto">
+              <a class="nav-link waves-effect waves-light" routerLink="/contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-effect waves-light aVestuario" routerLink="/vestuario">Vestuario y calzado laboral</a>
+          </li>
+      </ul>
+  </div>
+</nav>
